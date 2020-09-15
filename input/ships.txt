@@ -1,0 +1,5 @@
+Custo, 0, 4
+Aurora, 2, 2
+Boat, 1, 3
+Old Marry, 5, 5
+Black pearl, 3, 3
