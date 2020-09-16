@@ -12,13 +12,11 @@ public class Warehouse {
     private static final Logger logger = LogManager.getLogger();
     private static Warehouse instance = new Warehouse();
     private int containersInWarehouse;
-    private int warehouseCapacity;
+    private static final int WAREHOUSE_CAPACITY = 6;
     private Lock lock = new ReentrantLock();
     private Condition condition = lock.newCondition();
 
     private Warehouse() {
-        this.containersInWarehouse = 5;
-        this.warehouseCapacity = 10;
     }
 
     public static Warehouse getInstance() {
@@ -35,16 +33,11 @@ public class Warehouse {
     }
 
     public int getWarehouseCapacity() {
-        return warehouseCapacity;
-    }
-
-    public Warehouse setWarehouseCapacity(int warehouseCapacity) {
-        this.warehouseCapacity = warehouseCapacity;
-        return this;
+        return WAREHOUSE_CAPACITY;
     }
 
     public boolean isFull() {
-        return containersInWarehouse == warehouseCapacity;
+        return containersInWarehouse == WAREHOUSE_CAPACITY;
     }
 
     public boolean isEmpty() {
@@ -71,7 +64,7 @@ public class Warehouse {
             while (ship.addContainer() && !isEmpty()) {
                 containersInWarehouse--;
                 logger.log(Level.INFO, "Container added to ship {}, number of containers - {}, max capacity - {}",
-                        ship, containersInWarehouse, warehouseCapacity);
+                        ship, containersInWarehouse, WAREHOUSE_CAPACITY);
             }
         } finally {
             condition.signalAll();

@@ -1,47 +1,54 @@
-15.09.2020 13:05:53 [pool-2-thread-2] INFO  com.shitikov.port.entity.Port - Ship Ship{name='Aurora', containerNumber=2, containerCapacity=2} is in Port. 
-15.09.2020 13:05:53 [pool-2-thread-1] INFO  com.shitikov.port.entity.Port - Ship Ship{name='Custo', containerNumber=0, containerCapacity=4} is in Port. 
-15.09.2020 13:05:53 [pool-2-thread-5] INFO  com.shitikov.port.entity.Port - Ship Ship{name='Black pearl', containerNumber=3, containerCapacity=3} is in Port. 
-15.09.2020 13:05:53 [pool-2-thread-4] INFO  com.shitikov.port.entity.Port - No free piers. 
-15.09.2020 13:05:53 [pool-2-thread-3] INFO  com.shitikov.port.entity.Port - No free piers. 
-15.09.2020 13:05:53 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Aurora', containerNumber=1, containerCapacity=2}, number of containers - 8
-15.09.2020 13:05:53 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Aurora', containerNumber=0, containerCapacity=2}, number of containers - 9
-15.09.2020 13:05:53 [pool-2-thread-2] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Aurora', containerNumber=0, containerCapacity=2} doesn't have containers. 
-15.09.2020 13:05:53 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Black pearl', containerNumber=2, containerCapacity=3}, number of containers - 10
-15.09.2020 13:05:53 [pool-2-thread-1] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Custo', containerNumber=0, containerCapacity=4} doesn't have containers. 
-15.09.2020 13:05:53 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Aurora', containerNumber=1, containerCapacity=2}, number of containers - 9, max capacity - 10
-15.09.2020 13:05:53 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Aurora', containerNumber=2, containerCapacity=2}, number of containers - 8, max capacity - 10
-15.09.2020 13:05:53 [pool-2-thread-2] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Aurora', containerNumber=2, containerCapacity=2} is full. 
-15.09.2020 13:05:53 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Black pearl', containerNumber=2, containerCapacity=3}, number of containers - 7, max capacity - 10
-15.09.2020 13:05:53 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Black pearl', containerNumber=3, containerCapacity=3}, number of containers - 6, max capacity - 10
-15.09.2020 13:05:53 [pool-2-thread-5] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Black pearl', containerNumber=3, containerCapacity=3} is full. 
-15.09.2020 13:05:53 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Custo', containerNumber=1, containerCapacity=4}, number of containers - 5, max capacity - 10
-15.09.2020 13:05:53 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Custo', containerNumber=2, containerCapacity=4}, number of containers - 4, max capacity - 10
-15.09.2020 13:05:53 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Custo', containerNumber=3, containerCapacity=4}, number of containers - 3, max capacity - 10
-15.09.2020 13:05:53 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Custo', containerNumber=4, containerCapacity=4}, number of containers - 2, max capacity - 10
-15.09.2020 13:05:53 [pool-2-thread-1] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Custo', containerNumber=4, containerCapacity=4} is full. 
-15.09.2020 13:05:54 [pool-2-thread-2] INFO  com.shitikov.port.entity.Port - Ship Ship{name='Aurora', containerNumber=2, containerCapacity=2} sailed out of Port. 
-15.09.2020 13:05:54 [pool-2-thread-4] INFO  com.shitikov.port.entity.Port - Ship Ship{name='Old Marry', containerNumber=5, containerCapacity=5} is in Port. 
-15.09.2020 13:05:54 [pool-2-thread-3] INFO  com.shitikov.port.entity.Port - No free piers. 
-15.09.2020 13:05:54 [pool-2-thread-5] INFO  com.shitikov.port.entity.Port - Ship Ship{name='Black pearl', containerNumber=3, containerCapacity=3} sailed out of Port. 
-15.09.2020 13:05:54 [pool-2-thread-3] INFO  com.shitikov.port.entity.Port - Ship Ship{name='Boat', containerNumber=1, containerCapacity=3} is in Port. 
-15.09.2020 13:05:54 [pool-2-thread-1] INFO  com.shitikov.port.entity.Port - Ship Ship{name='Custo', containerNumber=4, containerCapacity=4} sailed out of Port. 
-15.09.2020 13:05:54 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Old Marry', containerNumber=4, containerCapacity=5}, number of containers - 3
-15.09.2020 13:05:54 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Old Marry', containerNumber=3, containerCapacity=5}, number of containers - 4
-15.09.2020 13:05:54 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Old Marry', containerNumber=2, containerCapacity=5}, number of containers - 5
-15.09.2020 13:05:54 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Old Marry', containerNumber=1, containerCapacity=5}, number of containers - 6
-15.09.2020 13:05:54 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Old Marry', containerNumber=0, containerCapacity=5}, number of containers - 7
-15.09.2020 13:05:54 [pool-2-thread-4] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Old Marry', containerNumber=0, containerCapacity=5} doesn't have containers. 
-15.09.2020 13:05:54 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Boat', containerNumber=0, containerCapacity=3}, number of containers - 8
-15.09.2020 13:05:54 [pool-2-thread-3] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Boat', containerNumber=0, containerCapacity=3} doesn't have containers. 
-15.09.2020 13:05:54 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Old Marry', containerNumber=1, containerCapacity=5}, number of containers - 7, max capacity - 10
-15.09.2020 13:05:54 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Old Marry', containerNumber=2, containerCapacity=5}, number of containers - 6, max capacity - 10
-15.09.2020 13:05:54 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Old Marry', containerNumber=3, containerCapacity=5}, number of containers - 5, max capacity - 10
-15.09.2020 13:05:54 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Old Marry', containerNumber=4, containerCapacity=5}, number of containers - 4, max capacity - 10
-15.09.2020 13:05:54 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Old Marry', containerNumber=5, containerCapacity=5}, number of containers - 3, max capacity - 10
-15.09.2020 13:05:54 [pool-2-thread-4] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Old Marry', containerNumber=5, containerCapacity=5} is full. 
-15.09.2020 13:05:54 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Boat', containerNumber=1, containerCapacity=3}, number of containers - 2, max capacity - 10
-15.09.2020 13:05:54 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Boat', containerNumber=2, containerCapacity=3}, number of containers - 1, max capacity - 10
-15.09.2020 13:05:54 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Boat', containerNumber=3, containerCapacity=3}, number of containers - 0, max capacity - 10
-15.09.2020 13:05:54 [pool-2-thread-3] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Boat', containerNumber=3, containerCapacity=3} is full. 
-15.09.2020 13:05:54 [pool-2-thread-3] INFO  com.shitikov.port.entity.Port - Ship Ship{name='Boat', containerNumber=3, containerCapacity=3} sailed out of Port. 
-15.09.2020 13:05:54 [pool-2-thread-4] INFO  com.shitikov.port.entity.Port - Ship Ship{name='Old Marry', containerNumber=5, containerCapacity=5} sailed out of Port. 
+16.09.2020 23:45:30 [pool-2-thread-6] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge is in Port. Pier 3
+16.09.2020 23:45:30 [pool-2-thread-7] INFO  com.shitikov.port.entity.Port - No free piers. 
+16.09.2020 23:45:30 [pool-2-thread-4] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Old Marry is in Port. Pier 2
+16.09.2020 23:45:30 [pool-2-thread-2] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Aurora is in Port. Pier 1
+16.09.2020 23:45:30 [pool-2-thread-1] INFO  com.shitikov.port.entity.Port - No free piers. 
+16.09.2020 23:45:30 [pool-2-thread-3] INFO  com.shitikov.port.entity.Port - No free piers. 
+16.09.2020 23:45:30 [pool-2-thread-5] INFO  com.shitikov.port.entity.Port - No free piers. 
+16.09.2020 23:45:30 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Aurora', containersNumber=0, containerCapacity=2, shipState=UnloadingState}, number of containers - 1
+16.09.2020 23:45:30 [pool-2-thread-2] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Aurora', containersNumber=0, containerCapacity=2, shipState=UnloadingState} doesn't have containers. 
+16.09.2020 23:45:30 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Old Marry', containersNumber=4, containerCapacity=5, shipState=UnloadingState}, number of containers - 2
+16.09.2020 23:45:30 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Old Marry', containersNumber=3, containerCapacity=5, shipState=UnloadingState}, number of containers - 3
+16.09.2020 23:45:30 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Old Marry', containersNumber=2, containerCapacity=5, shipState=UnloadingState}, number of containers - 4
+16.09.2020 23:45:30 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Old Marry', containersNumber=1, containerCapacity=5, shipState=UnloadingState}, number of containers - 5
+16.09.2020 23:45:30 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Old Marry', containersNumber=0, containerCapacity=5, shipState=UnloadingState}, number of containers - 6
+16.09.2020 23:45:30 [pool-2-thread-4] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Old Marry', containersNumber=0, containerCapacity=5, shipState=UnloadingState} doesn't have containers. 
+16.09.2020 23:45:30 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Aurora', containersNumber=1, containerCapacity=2, shipState=LoadingState}, number of containers - 5, max capacity - 6
+16.09.2020 23:45:30 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Aurora', containersNumber=2, containerCapacity=2, shipState=LoadingState}, number of containers - 4, max capacity - 6
+16.09.2020 23:45:30 [pool-2-thread-2] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Aurora', containersNumber=2, containerCapacity=2, shipState=LoadingState} is full. 
+16.09.2020 23:45:30 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Old Marry', containersNumber=1, containerCapacity=5, shipState=LoadingState}, number of containers - 3, max capacity - 6
+16.09.2020 23:45:30 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Old Marry', containersNumber=2, containerCapacity=5, shipState=LoadingState}, number of containers - 2, max capacity - 6
+16.09.2020 23:45:30 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Old Marry', containersNumber=3, containerCapacity=5, shipState=LoadingState}, number of containers - 1, max capacity - 6
+16.09.2020 23:45:30 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Old Marry', containersNumber=4, containerCapacity=5, shipState=LoadingState}, number of containers - 0, max capacity - 6
+16.09.2020 23:45:30 [pool-2-thread-2] INFO  com.shitikov.port.state.impl.DepartingState - Ship Aurora sailed out of Port. Pier 1
+16.09.2020 23:45:30 [pool-2-thread-1] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Custo is in Port. Pier 3
+16.09.2020 23:45:30 [pool-2-thread-3] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Boat is in Port. Pier 1
+16.09.2020 23:45:30 [pool-2-thread-5] INFO  com.shitikov.port.entity.Port - No free piers. 
+16.09.2020 23:45:30 [pool-2-thread-7] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Yacht is in Port. Pier 2
+16.09.2020 23:45:30 [pool-2-thread-6] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge sailed out of Port. Pier 3
+16.09.2020 23:45:30 [pool-2-thread-4] INFO  com.shitikov.port.state.impl.DepartingState - Ship Old Marry sailed out of Port. Pier 2
+16.09.2020 23:45:30 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Custo', containersNumber=2, containerCapacity=3, shipState=UnloadingState}, number of containers - 1
+16.09.2020 23:45:30 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Custo', containersNumber=1, containerCapacity=3, shipState=UnloadingState}, number of containers - 2
+16.09.2020 23:45:30 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Custo', containersNumber=0, containerCapacity=3, shipState=UnloadingState}, number of containers - 3
+16.09.2020 23:45:30 [pool-2-thread-1] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Custo', containersNumber=0, containerCapacity=3, shipState=UnloadingState} doesn't have containers. 
+16.09.2020 23:45:30 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Boat', containersNumber=6, containerCapacity=7, shipState=UnloadingState}, number of containers - 4
+16.09.2020 23:45:30 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Boat', containersNumber=5, containerCapacity=7, shipState=UnloadingState}, number of containers - 5
+16.09.2020 23:45:30 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Boat', containersNumber=4, containerCapacity=7, shipState=UnloadingState}, number of containers - 6
+16.09.2020 23:45:31 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Custo', containersNumber=1, containerCapacity=3, shipState=LoadingState}, number of containers - 5, max capacity - 6
+16.09.2020 23:45:31 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Custo', containersNumber=2, containerCapacity=3, shipState=LoadingState}, number of containers - 4, max capacity - 6
+16.09.2020 23:45:31 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Custo', containersNumber=3, containerCapacity=3, shipState=LoadingState}, number of containers - 3, max capacity - 6
+16.09.2020 23:45:31 [pool-2-thread-1] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Custo', containersNumber=3, containerCapacity=3, shipState=LoadingState} is full. 
+16.09.2020 23:45:31 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Yacht', containersNumber=7, containerCapacity=8, shipState=LoadingState}, number of containers - 2, max capacity - 6
+16.09.2020 23:45:31 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Yacht', containersNumber=8, containerCapacity=8, shipState=LoadingState}, number of containers - 1, max capacity - 6
+16.09.2020 23:45:31 [pool-2-thread-7] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Yacht', containersNumber=8, containerCapacity=8, shipState=LoadingState} is full. 
+16.09.2020 23:45:31 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Boat', containersNumber=4, containerCapacity=7, shipState=LoadingState}, number of containers - 0, max capacity - 6
+16.09.2020 23:45:31 [pool-2-thread-5] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Black pearl is in Port. Pier 3
+16.09.2020 23:45:31 [pool-2-thread-1] INFO  com.shitikov.port.state.impl.DepartingState - Ship Custo sailed out of Port. Pier 3
+16.09.2020 23:45:31 [pool-2-thread-7] INFO  com.shitikov.port.state.impl.DepartingState - Ship Yacht sailed out of Port. Pier 2
+16.09.2020 23:45:31 [pool-2-thread-3] INFO  com.shitikov.port.state.impl.DepartingState - Ship Boat sailed out of Port. Pier 1
+16.09.2020 23:45:31 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Black pearl', containersNumber=1, containerCapacity=3, shipState=UnloadingState}, number of containers - 1
+16.09.2020 23:45:31 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Black pearl', containersNumber=0, containerCapacity=3, shipState=UnloadingState}, number of containers - 2
+16.09.2020 23:45:31 [pool-2-thread-5] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Black pearl', containersNumber=0, containerCapacity=3, shipState=UnloadingState} doesn't have containers. 
+16.09.2020 23:45:31 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Black pearl', containersNumber=1, containerCapacity=3, shipState=LoadingState}, number of containers - 1, max capacity - 6
+16.09.2020 23:45:31 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Black pearl', containersNumber=2, containerCapacity=3, shipState=LoadingState}, number of containers - 0, max capacity - 6
+16.09.2020 23:45:31 [pool-2-thread-5] INFO  com.shitikov.port.state.impl.DepartingState - Ship Black pearl sailed out of Port. Pier 3

@@ -4,26 +4,27 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.*;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Port {
+    private static final int PIER_NUMBER = 3;
     private static Port instance = new Port();
     private static Logger logger = LogManager.getLogger();
-    Deque<Ship> ships;
-    private int pierNumber;
-    private Warehouse warehouse;
+    private Deque<Pier> freePiers;
+    private Queue<Pier> occupiedPiers;
     private Lock lock = new ReentrantLock();
     private Condition condition = lock.newCondition();
 
 
     private Port() {
-        this.pierNumber = 3;
-        this.ships = new ArrayDeque<>();
-        this.warehouse = Warehouse.getInstance();
+        this.occupiedPiers = new LinkedList<>();
+        this.freePiers = new ArrayDeque<>();
+        for (int i = 0; i < PIER_NUMBER; i++) {
+            freePiers.add(new Pier(i + 1));
+        }
     }
 
     public static Port getInstance() {
@@ -31,49 +32,42 @@ public class Port {
     }
 
     public int getPierNumber() {
-        return pierNumber;
+        return PIER_NUMBER;
     }
 
-    public Port setPierNumber(int pierNumber) {
-        this.pierNumber = pierNumber;
-        return this;
+    public Deque<Pier> getFreePiers() {
+        return freePiers;
     }
 
-    public Deque<Ship> getShips() {
-        return ships;
+    public Queue<Pier> getOccupiedPiers() {
+        return occupiedPiers;
     }
 
-    public Port setShips(Deque<Ship> ships) {
-        this.ships = ships;
-        return this;
-    }
-
-    public Warehouse getWarehouse() {
-        return warehouse;
-    }
-
-    public void add(Ship ship) {
+    public Optional<Pier> arrivePier() {
+        Optional<Pier> pierOpt = Optional.empty();
         try {
             lock.lock();
-            while (ships.size() == pierNumber) {
+            while (freePiers.size() == 0) {
                 logger.log(Level.INFO, "No free piers. ");
                 condition.await();
             }
-            ships.add(ship);
-            logger.log(Level.INFO, "Ship {} is in Port. ", ship);
+            Pier pier = freePiers.poll();
+            occupiedPiers.offer(pier);
+            pierOpt = Optional.of(pier);
         } catch (InterruptedException e) {
             logger.log(Level.ERROR, "Thread error. ", e);
         } finally {
             condition.signalAll();
             lock.unlock();
+            return pierOpt;
         }
     }
 
-    public void remove(Ship ship) {
+    public void departPier(Pier pier) {
         try {
             lock.lock();
-            ships.remove(ship);
-            logger.log(Level.INFO, "Ship {} sailed out of Port. ", ship);
+            freePiers.offer(pier);
+            occupiedPiers.remove();
         } finally {
             condition.signalAll();
             lock.unlock();
