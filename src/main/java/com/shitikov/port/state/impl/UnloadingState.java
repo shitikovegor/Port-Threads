@@ -20,8 +20,11 @@ public class UnloadingState implements ShipState {
 
     @Override
     public void unloadContainers(Ship ship) {
-        Pier pier = ship.getPier().get();
-        pier.unloadToWarehouse(ship);
+        Optional<Pier> pierOptional = ship.getPier();
+        if (pierOptional.isPresent()) {
+            Pier pier = pierOptional.get();
+            pier.unloadToWarehouse(ship);
+        }
 
         ship.setShipState(new LoadingState());
     }
@@ -33,11 +36,14 @@ public class UnloadingState implements ShipState {
 
     @Override
     public void departPier(Ship ship) {
-        Port port = Port.getInstance();
-        Pier pier = ship.getPier().get();
-        port.departPier(pier);
-        ship.setPier(Optional.empty());
-        logger.log(Level.INFO, "Ship {} sailed out of Port. Pier {}", ship.getName(), pier.getPierId());
+        Optional<Pier> pierOptional = ship.getPier();
+        if (pierOptional.isPresent()) {
+            Port port = Port.getInstance();
+            Pier pier = pierOptional.get();
+            port.departPier(pier);
+            ship.setPier(Optional.empty());
+            logger.log(Level.INFO, "Ship {} sailed out of Port. Pier {}", ship.getName(), pier.getPierId());
+        }
 
         ship.setShipState(new ArrivingState());
     }

@@ -4,17 +4,13 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Warehouse {
     private static final Logger logger = LogManager.getLogger();
-    private static Warehouse instance = new Warehouse();
-    private int containersInWarehouse;
     private static final int WAREHOUSE_CAPACITY = 6;
-    private Lock lock = new ReentrantLock();
-    private Condition condition = lock.newCondition();
+    private static Warehouse instance = new Warehouse();
+    private AtomicInteger containersInWarehouse = new AtomicInteger();
 
     private Warehouse() {
     }
@@ -23,11 +19,11 @@ public class Warehouse {
         return instance;
     }
 
-    public int getContainersInWarehouse() {
+    public AtomicInteger getContainersInWarehouse() {
         return containersInWarehouse;
     }
 
-    public Warehouse setContainersInWarehouse(int containersInWarehouse) {
+    public Warehouse setContainersInWarehouse(AtomicInteger containersInWarehouse) {
         this.containersInWarehouse = containersInWarehouse;
         return this;
     }
@@ -37,38 +33,32 @@ public class Warehouse {
     }
 
     public boolean isFull() {
-        return containersInWarehouse == WAREHOUSE_CAPACITY;
+        return containersInWarehouse.get() == WAREHOUSE_CAPACITY;
     }
 
     public boolean isEmpty() {
-        return containersInWarehouse <= 0;
+        return containersInWarehouse.get() <= 0;
     }
 
     public void unload(Ship ship) {
-        try {
-            lock.lock();
-            while (ship.removeContainer() && !isFull()) {
-                containersInWarehouse++;
-                logger.log(Level.INFO, "Container removed from ship {}, number of containers - {}",
-                        ship, containersInWarehouse);
-            }
-        } finally {
-            condition.signalAll();
-            lock.unlock();
+        while (ship.removeContainer() && !isFull()) {
+            containersInWarehouse.incrementAndGet();
+            logger.log(Level.INFO, "Container removed from ship {}, number of containers - {}",
+                    ship, containersInWarehouse);
+        }
+        if (isFull()) {
+            logger.log(Level.INFO, "Warehouse is full.");
         }
     }
 
     public void load(Ship ship) {
-        try {
-            lock.lock();
-            while (ship.addContainer() && !isEmpty()) {
-                containersInWarehouse--;
-                logger.log(Level.INFO, "Container added to ship {}, number of containers - {}, max capacity - {}",
-                        ship, containersInWarehouse, WAREHOUSE_CAPACITY);
-            }
-        } finally {
-            condition.signalAll();
-            lock.unlock();
+        while (ship.addContainer() && !isEmpty()) {
+            containersInWarehouse.decrementAndGet();
+            logger.log(Level.INFO, "Container added to ship {}, number of containers - {}, max capacity - {}",
+                    ship, containersInWarehouse, WAREHOUSE_CAPACITY);
+        }
+        if (isEmpty()) {
+            logger.log(Level.INFO, "Warehouse is empty.");
         }
     }
 }

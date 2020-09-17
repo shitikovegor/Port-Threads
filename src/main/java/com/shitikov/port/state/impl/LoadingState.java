@@ -25,19 +25,25 @@ public class LoadingState implements ShipState {
 
     @Override
     public void loadContainers(Ship ship) {
-        Pier pier = ship.getPier().get();
-        pier.loadFromWarehouse(ship);
+        Optional<Pier> pierOptional = ship.getPier();
+        if (pierOptional.isPresent()) {
+            Pier pier = pierOptional.get();
+            pier.loadFromWarehouse(ship);
+        }
 
         ship.setShipState(new DepartingState());
     }
 
     @Override
     public void departPier(Ship ship) {
-        Port port = Port.getInstance();
-        Pier pier = ship.getPier().get();
-        port.departPier(pier);
-        ship.setPier(Optional.empty());
-        logger.log(Level.INFO, "Ship {} sailed out of Port. Pier {}", ship.getName(), pier.getPierId());
+        Optional<Pier> pierOptional = ship.getPier();
+        if (pierOptional.isPresent()) {
+            Port port = Port.getInstance();
+            Pier pier = pierOptional.get();
+            port.departPier(pier);
+            ship.setPier(Optional.empty());
+            logger.log(Level.INFO, "Ship {} sailed out of Port. Pier {}", ship.getName(), pier.getPierId());
+        }
 
         ship.setShipState(new ArrivingState());
     }

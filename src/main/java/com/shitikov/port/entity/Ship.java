@@ -8,7 +8,6 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Optional;
 import java.util.concurrent.Callable;
-import java.util.concurrent.TimeUnit;
 
 public class Ship implements Callable<Ship> {
     private static Logger logger = LogManager.getLogger();
@@ -72,14 +71,10 @@ public class Ship implements Callable<Ship> {
         return this;
     }
 
-    public boolean isFull() {
-        return containersNumber >= containerCapacity;
-    }
-
     public boolean addContainer() {
         boolean result = false;
 
-        if (!isFull()) {
+        if (containersNumber < containerCapacity) {
             containersNumber++;
             result = true;
         } else {
@@ -102,29 +97,32 @@ public class Ship implements Callable<Ship> {
 
     @Override
     public Ship call() throws Exception {
-        shipState.arrivePier(Ship.this);
-        TimeUnit.MILLISECONDS.sleep(100);
-        shipState.unloadContainers(Ship.this);
-        TimeUnit.MILLISECONDS.sleep(100);
-        shipState.loadContainers(Ship.this);
-        TimeUnit.MILLISECONDS.sleep(100);
-        shipState.departPier(Ship.this);
+        shipState.arrivePier(this);
+        shipState.unloadContainers(this);
+        shipState.loadContainers(this);
+        shipState.departPier(this);
 
         return this;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass())
+            return false;
 
-        Ship ship = (Ship) o;
+        Ship other = (Ship) obj;
 
-        if (containersNumber != ship.containersNumber) return false;
-        if (containerCapacity != ship.containerCapacity) return false;
-        if (name != null ? !name.equals(ship.name) : ship.name != null) return false;
-        if (pier != null ? !pier.equals(ship.pier) : ship.pier != null) return false;
-        return shipState != null ? shipState.equals(ship.shipState) : ship.shipState == null;
+        if (containersNumber != other.containersNumber)
+            return false;
+        if (containerCapacity != other.containerCapacity)
+            return false;
+        if (name != null ? !name.equals(other.name) : other.name != null)
+            return false;
+        if (pier.isPresent() ? !pier.equals(other.pier) : other.pier.isPresent())
+            return false;
+        return shipState != null ? shipState.equals(other.shipState) : other.shipState == null;
     }
 
     @Override
@@ -132,7 +130,7 @@ public class Ship implements Callable<Ship> {
         int result = name != null ? name.hashCode() : 0;
         result = 31 * result + containersNumber;
         result = 31 * result + containerCapacity;
-        result = 31 * result + (pier != null ? pier.hashCode() : 0);
+        result = 31 * result + (pier.isPresent() ? pier.hashCode() : 0);
         result = 31 * result + (shipState != null ? shipState.hashCode() : 0);
         return result;
     }

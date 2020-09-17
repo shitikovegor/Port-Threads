@@ -1,7 +1,7 @@
-Custo, 3, 3
-Aurora, 1, 2
-Boat, 7, 7
-Old Marry, 5, 5
-Black pearl, 2, 3
-Barge, 4, 4
-Yacht, 7, 8
+Barge 1, 3, 3
+Barge 2, 1, 2
+Barge 3, 7, 7
+Barge 4, 5, 5
+Barge 5, 2, 3
+Barge 6, 4, 4
+Barge 7, 7, 8

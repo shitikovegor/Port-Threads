@@ -25,16 +25,19 @@ public class ArrivingState implements ShipState {
 
     @Override
     public void unloadContainers(Ship ship) {
-        logger.log(Level.WARN, "this action is impossible, ship {} isn't in Port.", ship.getName());
+        logger.log(Level.WARN, "this action is impossible, this action is impossible, state of ship {} is - Arriving.",
+                ship.getName());
     }
 
     @Override
     public void loadContainers(Ship ship) {
-        logger.log(Level.WARN, "this action is impossible, ship {} isn't in Port.", ship.getName());
+        logger.log(Level.WARN, "this action is impossible, this action is impossible, state of ship {} is - Arriving.",
+                ship.getName());
     }
 
     @Override
     public void departPier(Ship ship) {
-        logger.log(Level.WARN, "this action is impossible, ship {} isn't in Port.", ship.getName());
+        logger.log(Level.WARN, "this action is impossible, this action is impossible, state of ship {} is - Arriving.",
+                ship.getName());
     }
 }

@@ -47,7 +47,7 @@ public class Port {
         Optional<Pier> pierOpt = Optional.empty();
         try {
             lock.lock();
-            while (freePiers.size() == 0) {
+            while (freePiers.isEmpty()) {
                 logger.log(Level.INFO, "No free piers. ");
                 condition.await();
             }
@@ -55,12 +55,11 @@ public class Port {
             occupiedPiers.offer(pier);
             pierOpt = Optional.of(pier);
         } catch (InterruptedException e) {
-            logger.log(Level.ERROR, "Thread error. ", e);
+            logger.log(Level.WARN, "Thread error. ", e);
         } finally {
-            condition.signalAll();
             lock.unlock();
-            return pierOpt;
         }
+        return pierOpt;
     }
 
     public void departPier(Pier pier) {
@@ -69,7 +68,7 @@ public class Port {
             freePiers.offer(pier);
             occupiedPiers.remove();
         } finally {
-            condition.signalAll();
+            condition.signal();
             lock.unlock();
         }
     }
