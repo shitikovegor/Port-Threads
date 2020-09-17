@@ -1,69 +1,81 @@
-17.09.2020 12:16:20 [pool-2-thread-2] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge 2 is in Port. Pier 1
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.entity.Port - No free piers. 
-17.09.2020 12:16:20 [pool-2-thread-3] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge 3 is in Port. Pier 3
-17.09.2020 12:16:20 [pool-2-thread-6] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge 6 is in Port. Pier 2
-17.09.2020 12:16:20 [pool-2-thread-4] INFO  com.shitikov.port.entity.Port - No free piers. 
-17.09.2020 12:16:20 [pool-2-thread-1] INFO  com.shitikov.port.entity.Port - No free piers. 
-17.09.2020 12:16:20 [pool-2-thread-5] INFO  com.shitikov.port.entity.Port - No free piers. 
-17.09.2020 12:16:20 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 3', containersNumber=6, containerCapacity=7, shipState=UnloadingState}, number of containers - 3
-17.09.2020 12:16:20 [pool-2-thread-6] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 6', containersNumber=3, containerCapacity=4, shipState=UnloadingState}, number of containers - 3
-17.09.2020 12:16:20 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 3', containersNumber=5, containerCapacity=7, shipState=UnloadingState}, number of containers - 4
-17.09.2020 12:16:20 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 2', containersNumber=0, containerCapacity=2, shipState=UnloadingState}, number of containers - 3
-17.09.2020 12:16:20 [pool-2-thread-6] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 6', containersNumber=2, containerCapacity=4, shipState=UnloadingState}, number of containers - 5
-17.09.2020 12:16:20 [pool-2-thread-2] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Barge 2', containersNumber=0, containerCapacity=2, shipState=UnloadingState} doesn't have containers. 
-17.09.2020 12:16:20 [pool-2-thread-6] INFO  com.shitikov.port.entity.Warehouse - Warehouse is full.
-17.09.2020 12:16:20 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Warehouse is full.
-17.09.2020 12:16:20 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 3', containersNumber=4, containerCapacity=7, shipState=UnloadingState}, number of containers - 6
-17.09.2020 12:16:20 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Warehouse is full.
-17.09.2020 12:16:20 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 2', containersNumber=1, containerCapacity=2, shipState=LoadingState}, number of containers - 3, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-6] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 6', containersNumber=2, containerCapacity=4, shipState=LoadingState}, number of containers - 3, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 3', containersNumber=4, containerCapacity=7, shipState=LoadingState}, number of containers - 3, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 2', containersNumber=2, containerCapacity=2, shipState=LoadingState}, number of containers - 2, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-6] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 6', containersNumber=3, containerCapacity=4, shipState=LoadingState}, number of containers - 1, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 3', containersNumber=5, containerCapacity=7, shipState=LoadingState}, number of containers - 0, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-2] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Barge 2', containersNumber=2, containerCapacity=2, shipState=LoadingState} is full. 
-17.09.2020 12:16:20 [pool-2-thread-6] INFO  com.shitikov.port.entity.Warehouse - Warehouse is empty.
-17.09.2020 12:16:20 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Warehouse is empty.
-17.09.2020 12:16:20 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Warehouse is empty.
-17.09.2020 12:16:20 [pool-2-thread-3] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge 3 sailed out of Port. Pier 3
-17.09.2020 12:16:20 [pool-2-thread-2] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge 2 sailed out of Port. Pier 1
-17.09.2020 12:16:20 [pool-2-thread-6] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge 6 sailed out of Port. Pier 2
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge 7 is in Port. Pier 2
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 7', containersNumber=6, containerCapacity=8, shipState=UnloadingState}, number of containers - 1
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 7', containersNumber=5, containerCapacity=8, shipState=UnloadingState}, number of containers - 2
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 7', containersNumber=4, containerCapacity=8, shipState=UnloadingState}, number of containers - 3
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 7', containersNumber=3, containerCapacity=8, shipState=UnloadingState}, number of containers - 4
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 7', containersNumber=2, containerCapacity=8, shipState=UnloadingState}, number of containers - 5
-17.09.2020 12:16:20 [pool-2-thread-4] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge 4 is in Port. Pier 3
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 7', containersNumber=1, containerCapacity=8, shipState=UnloadingState}, number of containers - 6
-17.09.2020 12:16:20 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Warehouse is full.
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Warehouse is full.
-17.09.2020 12:16:20 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 4', containersNumber=5, containerCapacity=5, shipState=LoadingState}, number of containers - 5, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 7', containersNumber=1, containerCapacity=8, shipState=LoadingState}, number of containers - 4, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-4] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Barge 4', containersNumber=5, containerCapacity=5, shipState=LoadingState} is full. 
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 7', containersNumber=2, containerCapacity=8, shipState=LoadingState}, number of containers - 3, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-4] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge 4 sailed out of Port. Pier 3
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 7', containersNumber=3, containerCapacity=8, shipState=LoadingState}, number of containers - 2, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 7', containersNumber=4, containerCapacity=8, shipState=LoadingState}, number of containers - 1, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 7', containersNumber=5, containerCapacity=8, shipState=LoadingState}, number of containers - 0, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Warehouse is empty.
-17.09.2020 12:16:20 [pool-2-thread-7] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge 7 sailed out of Port. Pier 2
-17.09.2020 12:16:20 [pool-2-thread-1] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge 1 is in Port. Pier 1
-17.09.2020 12:16:20 [pool-2-thread-5] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge 5 is in Port. Pier 3
-17.09.2020 12:16:20 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 1', containersNumber=2, containerCapacity=3, shipState=UnloadingState}, number of containers - 1
-17.09.2020 12:16:20 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 5', containersNumber=1, containerCapacity=3, shipState=UnloadingState}, number of containers - 2
-17.09.2020 12:16:20 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 5', containersNumber=0, containerCapacity=3, shipState=UnloadingState}, number of containers - 4
-17.09.2020 12:16:20 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 1', containersNumber=1, containerCapacity=3, shipState=UnloadingState}, number of containers - 3
-17.09.2020 12:16:20 [pool-2-thread-5] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Barge 5', containersNumber=0, containerCapacity=3, shipState=UnloadingState} doesn't have containers. 
-17.09.2020 12:16:20 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 1', containersNumber=0, containerCapacity=3, shipState=UnloadingState}, number of containers - 5
-17.09.2020 12:16:20 [pool-2-thread-1] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Barge 1', containersNumber=0, containerCapacity=3, shipState=UnloadingState} doesn't have containers. 
-17.09.2020 12:16:20 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 5', containersNumber=1, containerCapacity=3, shipState=LoadingState}, number of containers - 4, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 5', containersNumber=2, containerCapacity=3, shipState=LoadingState}, number of containers - 3, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 1', containersNumber=1, containerCapacity=3, shipState=LoadingState}, number of containers - 2, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 5', containersNumber=3, containerCapacity=3, shipState=LoadingState}, number of containers - 0, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 1', containersNumber=2, containerCapacity=3, shipState=LoadingState}, number of containers - 0, max capacity - 6
-17.09.2020 12:16:20 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Warehouse is empty.
-17.09.2020 12:16:20 [pool-2-thread-5] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Barge 5', containersNumber=3, containerCapacity=3, shipState=LoadingState} is full. 
-17.09.2020 12:16:20 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Warehouse is empty.
-17.09.2020 12:16:20 [pool-2-thread-1] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge 1 sailed out of Port. Pier 1
-17.09.2020 12:16:20 [pool-2-thread-5] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge 5 sailed out of Port. Pier 3
+17.09.2020 16:45:51 [main] INFO  com.shitikov.port.main.Main - Ship{name='Barge 1', containersNumber=3, containerCapacity=3, shipState=ArrivingState}
+17.09.2020 16:45:51 [main] INFO  com.shitikov.port.main.Main - Ship{name='Barge 2', containersNumber=1, containerCapacity=2, shipState=ArrivingState}
+17.09.2020 16:45:51 [main] INFO  com.shitikov.port.main.Main - Ship{name='Barge 3', containersNumber=7, containerCapacity=7, shipState=ArrivingState}
+17.09.2020 16:45:51 [main] INFO  com.shitikov.port.main.Main - Ship{name='Barge 4', containersNumber=5, containerCapacity=5, shipState=ArrivingState}
+17.09.2020 16:45:51 [main] INFO  com.shitikov.port.main.Main - Ship{name='Barge 5', containersNumber=2, containerCapacity=3, shipState=ArrivingState}
+17.09.2020 16:45:51 [main] INFO  com.shitikov.port.main.Main - Ship{name='Barge 6', containersNumber=4, containerCapacity=4, shipState=ArrivingState}
+17.09.2020 16:45:51 [main] INFO  com.shitikov.port.main.Main - Ship{name='Barge 7', containersNumber=7, containerCapacity=8, shipState=ArrivingState}
+17.09.2020 16:45:51 [pool-2-thread-4] INFO  com.shitikov.port.entity.Port - No free piers. 
+17.09.2020 16:45:51 [pool-2-thread-5] INFO  com.shitikov.port.entity.Port - No free piers. 
+17.09.2020 16:45:51 [pool-2-thread-6] INFO  com.shitikov.port.entity.Port - No free piers. 
+17.09.2020 16:45:51 [pool-2-thread-7] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge 7 is in Port. Pier 2
+17.09.2020 16:45:51 [pool-2-thread-2] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge 2 is in Port. Pier 1
+17.09.2020 16:45:51 [pool-2-thread-3] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge 3 is in Port. Pier 3
+17.09.2020 16:45:51 [pool-2-thread-1] INFO  com.shitikov.port.entity.Port - No free piers. 
+17.09.2020 16:45:51 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 3', containersNumber=6, containerCapacity=7, shipState=UnloadingState}, number of containers - 3
+17.09.2020 16:45:51 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 2', containersNumber=0, containerCapacity=2, shipState=UnloadingState}, number of containers - 3
+17.09.2020 16:45:51 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 7', containersNumber=6, containerCapacity=8, shipState=UnloadingState}, number of containers - 2
+17.09.2020 16:45:51 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 3', containersNumber=5, containerCapacity=7, shipState=UnloadingState}, number of containers - 4
+17.09.2020 16:45:51 [pool-2-thread-2] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Barge 2', containersNumber=0, containerCapacity=2, shipState=UnloadingState} doesn't have containers. 
+17.09.2020 16:45:51 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 7', containersNumber=5, containerCapacity=8, shipState=UnloadingState}, number of containers - 5
+17.09.2020 16:45:51 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 3', containersNumber=4, containerCapacity=7, shipState=UnloadingState}, number of containers - 6
+17.09.2020 16:45:51 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Warehouse is full.
+17.09.2020 16:45:51 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Warehouse is full.
+17.09.2020 16:45:51 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Warehouse is full.
+17.09.2020 16:45:51 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 3', containersNumber=4, containerCapacity=7, shipState=LoadingState}, number of containers - 3, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 2', containersNumber=1, containerCapacity=2, shipState=LoadingState}, number of containers - 3, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 7', containersNumber=5, containerCapacity=8, shipState=LoadingState}, number of containers - 3, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 3', containersNumber=5, containerCapacity=7, shipState=LoadingState}, number of containers - 2, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 7', containersNumber=6, containerCapacity=8, shipState=LoadingState}, number of containers - 0, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 2', containersNumber=2, containerCapacity=2, shipState=LoadingState}, number of containers - 0, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-3] INFO  com.shitikov.port.entity.Warehouse - Warehouse is empty.
+17.09.2020 16:45:51 [pool-2-thread-2] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Barge 2', containersNumber=2, containerCapacity=2, shipState=LoadingState} is full. 
+17.09.2020 16:45:51 [pool-2-thread-7] INFO  com.shitikov.port.entity.Warehouse - Warehouse is empty.
+17.09.2020 16:45:51 [pool-2-thread-2] INFO  com.shitikov.port.entity.Warehouse - Warehouse is empty.
+17.09.2020 16:45:51 [pool-2-thread-3] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge 3 sailed out of Port. Pier 3
+17.09.2020 16:45:51 [pool-2-thread-7] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge 7 sailed out of Port. Pier 2
+17.09.2020 16:45:51 [pool-2-thread-2] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge 2 sailed out of Port. Pier 1
+17.09.2020 16:45:51 [pool-2-thread-4] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge 4 is in Port. Pier 3
+17.09.2020 16:45:51 [pool-2-thread-5] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge 5 is in Port. Pier 2
+17.09.2020 16:45:51 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 4', containersNumber=4, containerCapacity=5, shipState=UnloadingState}, number of containers - 1
+17.09.2020 16:45:51 [pool-2-thread-6] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge 6 is in Port. Pier 1
+17.09.2020 16:45:51 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 5', containersNumber=1, containerCapacity=3, shipState=UnloadingState}, number of containers - 2
+17.09.2020 16:45:51 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 4', containersNumber=3, containerCapacity=5, shipState=UnloadingState}, number of containers - 3
+17.09.2020 16:45:51 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 5', containersNumber=0, containerCapacity=3, shipState=UnloadingState}, number of containers - 4
+17.09.2020 16:45:51 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 4', containersNumber=2, containerCapacity=5, shipState=UnloadingState}, number of containers - 5
+17.09.2020 16:45:51 [pool-2-thread-6] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 6', containersNumber=3, containerCapacity=4, shipState=UnloadingState}, number of containers - 6
+17.09.2020 16:45:51 [pool-2-thread-5] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Barge 5', containersNumber=0, containerCapacity=3, shipState=UnloadingState} doesn't have containers. 
+17.09.2020 16:45:51 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Warehouse is full.
+17.09.2020 16:45:51 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Warehouse is full.
+17.09.2020 16:45:51 [pool-2-thread-6] INFO  com.shitikov.port.entity.Warehouse - Warehouse is full.
+17.09.2020 16:45:51 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 5', containersNumber=1, containerCapacity=3, shipState=LoadingState}, number of containers - 4, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 4', containersNumber=2, containerCapacity=5, shipState=LoadingState}, number of containers - 5, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-6] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 6', containersNumber=3, containerCapacity=4, shipState=LoadingState}, number of containers - 3, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 5', containersNumber=2, containerCapacity=3, shipState=LoadingState}, number of containers - 2, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 4', containersNumber=3, containerCapacity=5, shipState=LoadingState}, number of containers - 1, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-6] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 6', containersNumber=4, containerCapacity=4, shipState=LoadingState}, number of containers - 0, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-5] INFO  com.shitikov.port.entity.Warehouse - Warehouse is empty.
+17.09.2020 16:45:51 [pool-2-thread-6] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Barge 6', containersNumber=4, containerCapacity=4, shipState=LoadingState} is full. 
+17.09.2020 16:45:51 [pool-2-thread-4] INFO  com.shitikov.port.entity.Warehouse - Warehouse is empty.
+17.09.2020 16:45:51 [pool-2-thread-5] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge 5 sailed out of Port. Pier 2
+17.09.2020 16:45:51 [pool-2-thread-6] INFO  com.shitikov.port.entity.Warehouse - Warehouse is empty.
+17.09.2020 16:45:51 [pool-2-thread-1] INFO  com.shitikov.port.state.impl.ArrivingState - Ship Barge 1 is in Port. Pier 2
+17.09.2020 16:45:51 [pool-2-thread-6] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge 6 sailed out of Port. Pier 1
+17.09.2020 16:45:51 [pool-2-thread-4] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge 4 sailed out of Port. Pier 3
+17.09.2020 16:45:51 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 1', containersNumber=2, containerCapacity=3, shipState=UnloadingState}, number of containers - 1
+17.09.2020 16:45:51 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 1', containersNumber=1, containerCapacity=3, shipState=UnloadingState}, number of containers - 2
+17.09.2020 16:45:51 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container removed from ship Ship{name='Barge 1', containersNumber=0, containerCapacity=3, shipState=UnloadingState}, number of containers - 3
+17.09.2020 16:45:51 [pool-2-thread-1] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Barge 1', containersNumber=0, containerCapacity=3, shipState=UnloadingState} doesn't have containers. 
+17.09.2020 16:45:51 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 1', containersNumber=1, containerCapacity=3, shipState=LoadingState}, number of containers - 2, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 1', containersNumber=2, containerCapacity=3, shipState=LoadingState}, number of containers - 1, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Container added to ship Ship{name='Barge 1', containersNumber=3, containerCapacity=3, shipState=LoadingState}, number of containers - 0, max capacity - 6
+17.09.2020 16:45:51 [pool-2-thread-1] INFO  com.shitikov.port.entity.Ship - Ship Ship{name='Barge 1', containersNumber=3, containerCapacity=3, shipState=LoadingState} is full. 
+17.09.2020 16:45:51 [pool-2-thread-1] INFO  com.shitikov.port.entity.Warehouse - Warehouse is empty.
+17.09.2020 16:45:51 [pool-2-thread-1] INFO  com.shitikov.port.state.impl.DepartingState - Ship Barge 1 sailed out of Port. Pier 2
+17.09.2020 16:45:51 [main] INFO  com.shitikov.port.main.Main - Ship{name='Barge 1', containersNumber=3, containerCapacity=3, shipState=ArrivingState}
+17.09.2020 16:45:51 [main] INFO  com.shitikov.port.main.Main - Ship{name='Barge 2', containersNumber=2, containerCapacity=2, shipState=ArrivingState}
+17.09.2020 16:45:51 [main] INFO  com.shitikov.port.main.Main - Ship{name='Barge 3', containersNumber=6, containerCapacity=7, shipState=ArrivingState}
+17.09.2020 16:45:52 [main] INFO  com.shitikov.port.main.Main - Ship{name='Barge 4', containersNumber=4, containerCapacity=5, shipState=ArrivingState}
+17.09.2020 16:45:52 [main] INFO  com.shitikov.port.main.Main - Ship{name='Barge 5', containersNumber=3, containerCapacity=3, shipState=ArrivingState}
+17.09.2020 16:45:52 [main] INFO  com.shitikov.port.main.Main - Ship{name='Barge 6', containersNumber=4, containerCapacity=4, shipState=ArrivingState}
+17.09.2020 16:45:52 [main] INFO  com.shitikov.port.main.Main - Ship{name='Barge 7', containersNumber=7, containerCapacity=8, shipState=ArrivingState}
