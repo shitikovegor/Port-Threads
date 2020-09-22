@@ -44,7 +44,7 @@ public class Port {
     }
 
     public Optional<Pier> arrivePier() {
-        Optional<Pier> pierOpt = Optional.empty();
+        Optional<Pier> pierOpt;
         try {
             lock.lock();
             while (freePiers.isEmpty()) {
@@ -56,6 +56,7 @@ public class Port {
             pierOpt = Optional.of(pier);
         } catch (InterruptedException e) {
             logger.log(Level.WARN, "Thread error. ", e);
+            pierOpt = Optional.empty();
         } finally {
             lock.unlock();
         }
