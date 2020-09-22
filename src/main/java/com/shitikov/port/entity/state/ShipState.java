@@ -1,4 +1,4 @@
-package com.shitikov.port.state;
+package com.shitikov.port.entity.state;
 
 import com.shitikov.port.entity.Ship;
 

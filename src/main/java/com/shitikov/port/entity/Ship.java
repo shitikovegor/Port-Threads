@@ -1,7 +1,7 @@
 package com.shitikov.port.entity;
 
-import com.shitikov.port.state.ShipState;
-import com.shitikov.port.state.impl.ArrivingState;
+import com.shitikov.port.entity.state.ShipState;
+import com.shitikov.port.entity.state.impl.ArrivingState;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

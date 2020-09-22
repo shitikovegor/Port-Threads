@@ -1,9 +1,9 @@
-package com.shitikov.port.state.impl;
+package com.shitikov.port.entity.state.impl;
 
 import com.shitikov.port.entity.Pier;
 import com.shitikov.port.entity.Port;
 import com.shitikov.port.entity.Ship;
-import com.shitikov.port.state.ShipState;
+import com.shitikov.port.entity.state.ShipState;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
